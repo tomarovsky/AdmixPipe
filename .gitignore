@@ -1,0 +1,18 @@
+# Snakemake dir
+.snakemake/
+.idea/
+
+# genomes dir
+input/
+
+# results dir
+results/
+
+# logs dir
+cluster_logs/
+logs/
+
+# benchmarks dir
+benchmarks/
+
+
