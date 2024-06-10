@@ -1,0 +1,22 @@
+# ---- Conda config ----
+name: admixpipe
+channels:
+  - bioconda
+  - mahajrod
+dependencies:
+  - plink
+  - admixture
+  - admixtools
+  - python=3.8
+  - biopython
+  - cython
+  - numpy
+  - multiprocess
+  - matplotlib
+  - seaborn
+#  - mavr
+#  - routoolpa
+  - pip:
+    - phyde
+    - "--editable=git+https://github.com/mahajrod/MAVR.git#egg=MAVR"
+    - "--editable=git+https://github.com/mahajrod/RouToolPa.git#egg=RouToolPa"

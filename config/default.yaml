@@ -1,0 +1,54 @@
+conda_config: "workflow/envs/conda.yaml"
+
+# ---- Tool parameters ----
+plink_ld_options: "--double-id --allow-extra-chr --set-missing-var-ids @:# --indep-pairwise 50 10 0.1"
+plink_filt_options: "--allow-extra-chr --set-missing-var-ids @:# --snps-only --pca --make-bed"
+admixture_K: [1, 2, 3, 4, 5]
+admixture_seeds: [41, 42, 43]
+admixture_options: ""
+
+# ---- Sample map ----
+parent_1: "sable"
+parent_1_samples: "10xmzib, S26, T8, T26, T50, T72, T90, T104, T118, T148, T150, T194, china"
+parent_2: "pine"
+parent_2_samples: "10xmmar, S44, S46, S49, T149, T24, T76, T77, T82"
+hybrid: "kidas"
+hybrids_samples: "T18, S50, T151, T78, T79, T81, T83, T84, T85, T86, T87"
+outgroup_sample: "mfoi"
+
+# ---- Directory structure ----
+input_vcf_path: "input/test.vcf.gz" # vcf.gz!
+log_dir: "logs"
+cluster_log_dir: "cluster_logs"
+benchmark_dir: "benchmarks"
+output_dir: "results"
+plink_dir: "plink"
+admixture_dir: "admixture"
+hyde_dir: "hyde"
+admixtools_dir: "admixtools"
+
+# ---- Resources ----
+# ---- Tool threads ----
+plink_threads: 2
+plink_to_fasta_threads: 1
+admixture_threads: 2
+cv_errors_threads: 1
+hyde_threads: 2
+admixtools_threads: 2
+
+# ---- Tool memory ----
+plink_mem_mb: 4000
+plink_to_fasta_mem_mb: 4000
+admixture_mem_mb: 4000
+cv_errors_mem_mb: 500
+hyde_mem_mb: 4000
+admixtools_mem_mb: 4000
+
+# ---- Tool time ----
+plink_time: "1:00:00"
+plink_to_fasta_time: "1:00:00"
+admixture_time: "3:00:00"
+cv_errors_time: "0:15:00"
+hyde_time: "3:00:00"
+admixtools_time: "3:00:00"
+
