@@ -12,6 +12,7 @@ ToDo:
    - [ ] Pong
  - [ ] AdmixTools
    - [x] PLINK -> Eigenstrat
+   - [ ] triangulaR
    - [ ] D stats
    - [ ] F3 stats
    - [ ] F4 stats
