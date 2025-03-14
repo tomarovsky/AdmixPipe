@@ -1,8 +1,8 @@
 conda_config: "workflow/envs/conda.yaml"
 
 # ---- Tool parameters ----
-plink_ld_options: "--double-id --allow-extra-chr --set-missing-var-ids @:# --indep-pairwise 50 10 0.1"
-plink_filt_options: "--allow-extra-chr --set-missing-var-ids @:# --snps-only --pca --make-bed"
+plink_ld_options: "--double-id --allow-extra-chr --set-missing-var-ids @:# --indep-pairwise 50 10 0.7"
+plink_filt_options: "--allow-extra-chr --set-missing-var-ids @:# --geno 0 --maf 0.03 --snps-only --pca --make-bed"
 admixture_K: [1, 2, 3, 4, 5]
 admixture_seeds: [41, 42, 43]
 admixture_options: ""
